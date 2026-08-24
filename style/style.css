@@ -6,12 +6,12 @@
 
 /* Base Page Background & Structure */
 html {
-    background-color: #5C8267 !important;
+    background-color: #2B4C7E !important;
     min-height: 100vh;
 }
 
 body {
-    background-color: #5C8267 !important;
+    background-color: #2B4C7E !important;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
