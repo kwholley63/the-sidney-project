@@ -22,22 +22,53 @@ body {
     text-align: center;
 }
 
+/* Header & Navigation Styles */
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+}
+
+nav a {
+    color: #E2EFE0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 /* Layout Containers */
 .page-card,
-.donations-container {
+.donations-container,
+.sidney-support-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 40px 20px;
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
     flex-grow: 1;
 }
 
-/* Index Page Heading */
+/* Index & General Page Headings */
 .main-heading {
     font-size: 28px;
     font-weight: 500;
@@ -138,4 +169,161 @@ footer {
     font-size: 13px;
     letter-spacing: 1.5px;
     color: #E2EFE0;
+}
+
+/* ==========================================
+   Sidney Project Support Grid Styles
+   ========================================== */
+
+.sidney-title {
+    font-family: 'Caveat', cursive;
+    font-size: 58px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.sidney-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #E2EFE0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.sidney-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/* White Bordered Action Cards */
+.sidney-card {
+    border: 3px solid #FFFFFF;
+    padding: 25px 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 220px;
+}
+
+.sidney-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidney-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Contact Info Area */
+.sidney-contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidney-contact-box h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.sidney-contact-box p, 
+.sidney-contact-box a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.sidney-contact-box a {
+    border-bottom: 1px dashed #E2EFE0;
+    font-weight: 600;
+}
+
+.sidney-contact-box a:hover {
+    color: #E2EFE0;
+}
+
+/* Mission Text Area */
+.sidney-mission {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidney-mission p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Logo Card */
+.sidney-logo-card {
+    background-color: #EAEAEA;
+    padding: 30px 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidney-logo-card img {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.sidney-logo-card p {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sidney-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidney-title {
+        font-size: 44px;
+    }
+
+    .sidney-subtitle {
+        font-size: 18px;
+    }
 }
